@@ -1,50 +1,112 @@
+<h1>
+  <a href="html/welcome.html"> Welcome User..!</a>
+  <a href="html/welcome.html#impCh"> IMP topic</a>
+</h1>
+
+<h1>HTML</h1>
+<h3>
+  <a href="html/1_struct-of-html.html">
+    Preeti Introduction to html...!
+  </a>
+</h3>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        background-image: url(https://wallpaperplay.com/walls/full/2/8/2/108568.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
+      }
+
+      div {
+        border: 1px solid black;
+        height: 450px;
+      }
+
+      #div1,
+      #div3,
+      #div5,
+      #div7 {
+        background-color: white;
+      }
+
+      #div4 {
+        background-image: url(https://wallpaperaccess.com/full/1467904.jpg);
+        background-attachment: fixed;
+        background-size: 100%;
+      }
+
+      #div6 {
+        background-image: url(https://wallpaperaccess.com/full/1448623.jpg);
+        background-attachment: fixed;
+        background-size: 100%;
+      }
+
+      #div1,
+      #div7 {
+        height: 100px;
+      }
+
+      li {
+        color: red;
+        display: inline;
+        padding: 5px;
+        border-radius: 6px;
+        box-shadow: 2px 2px 5px green;
+        margin: 2px;
+        /* border: 1px solid blue; */
+      }
+    </style>
   </head>
+
   <body>
-    <script>
-      var name = "Ravi"; // 1mb    :  1001
-      var rNo = 12; // 1mb   : 1298
-
-      document.write(
-        "Hello " + name + "..! <br> " + name + " Having Roll no " + rNo + "..!"
-      );
-
-      var name1 = "Laxmi"; // 1mb   :23543
-      var rNo1 = 13; //1mb   :  4444223
-
-      document.write(
-        "<br>Hello Preeti" +
-          name1 +
-          "..! <br> " +
-          name1 +
-          " Having Roll no " +
-          rNo1 +
-          "..!"
-      );
-
-      //   100 = 2000;
-
-      //  Array
-      var names = ["Rahul", "Laxmi", "Preeti"]; // 1mb :1001
-      var rNos = [11, 12, 13]; // 1mb : 1002
-
-      console.log(names);
-      console.table(names);
-
-      document.write(
-        "<br><br>Hello Preeti" +
-          names[0] +
-          "..! <br> " +
-          names[0] +
-          " Having Roll no " +
-          rNos[0] +
-          "..!"
-      );
-    </script>
+    <div class="cls" id="div1">
+      <ul>
+        <li>Home</li>
+        <li>Contact Us</li>
+        <li>Products</li>
+        <li>Help</li>
+      </ul>
+    </div>
+    <div class="cls" id="div2">
+      <h1>2</h1>
+    </div>
+    <div class="cls" id="div3">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.057435231529!2d73.84031491500019!3d18.526306487405645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07f8f919871%3A0x8808fb00fd17c2a6!2sSevenMentor%20Pvt%20Ltd%20Java%20AngularJS%20MeanStack%20Classes%20in%20Pune!5e0!3m2!1sen!2sin!4v1590929965320!5m2!1sen!2sin"
+        width="50%"
+        height="450"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+    <div class="cls" id="div4">
+      <h1>4</h1>
+    </div>
+    <div class="cls" id="div5">
+      <iframe
+        width="50%"
+        height="450"
+        src="https://www.youtube.com/embed/mUNvnU5rFPc"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="cls" id="div6">
+      <h1>6</h1>
+    </div>
+    <div class="cls" id="div7">
+      <h1>7</h1>
+    </div>
   </body>
 </html>
