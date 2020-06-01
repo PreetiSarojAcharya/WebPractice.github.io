@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <img src="../img/_PP05067.jpg" width="600px" id="bigImg" /><br />
+    <img
+      src="../img/_PP05063.jpg"
+      width="200px"
+      onclick="document.getElementById('bigImg').src = src"
+    />
+    <img
+      src="../img/_PP08880.jpg"
+      width="200px"
+      onclick="document.getElementById('bigImg').src = src"
+    />
+    <img
+      src="../img/_PP04791.jpg"
+      width="200px"
+      onclick="document.getElementById('bigImg').src = src"
+    />
+
+    <script>
+      var ele = document.getElementById("bigImg");
+      console.log("ele", ele);
+      console.log("ele : ", ele);
+      console.log("ele : ", ele.src);
+    </script>
+  </body>
+</html>

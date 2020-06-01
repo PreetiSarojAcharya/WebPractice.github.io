@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .top {
+        color: blue;
+      }
+      .fail {
+        color: red;
+      }
+      .norm {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function name() {
+        //  def
+        document.write("<br>Hello World..!");
+      }
+
+      name(); //  call
+
+      //////////////  Params :  function ///
+      // document.write("<b><br><br><br>Parameter function<br><b/>");
+      // var name = function name(sName) {
+      //   // name(params)
+      //   //  def
+
+      //   document.write("<br>Hello " + sName + "..!");
+      // };
+
+      // name("Rahul"); //  call( arg)
+      // name("Aakash"); //  call
+      // name("Ravi"); //  call
+
+      //////////  Multi params : optional params
+      // document.write("<b><br><br><br>Multi params : optional params<br><b/>");
+      // function name1(sName = "abcd", rNo = 00) {
+      //   // name(params)
+      //   //  def
+
+      //   document.write("<br>Hello " + sName + "..!");
+      //   document.write("<br> " + sName + " Having R_No : " + rNo);
+      // }
+
+      // name1("Rahul", 10); //  call( arg)
+      // name1("Aakash", 12, 34); //  call
+      // name1(); //  call
+
+      ///////////////fun with :  return
+
+      function marks(sub1, sub2, sub3) {
+        tot = sub1 + sub2 + sub3;
+        return tot;
+        // document.write("<br> Res : " + tot);
+      }
+
+      var res = marks(10, 10, 10);
+      shwResult();
+
+      var res = marks(80, 80, 80);
+      shwResult();
+
+      var res = marks(50, 10, 50);
+      shwResult();
+
+      function shwResult() {
+        if (res < 35) {
+          document.write("<br>  <p class='fail'>Fail :" + res + "</p>");
+        } else {
+          document.write("<br>  <p class='norm'>Pass :" + res + "</p>");
+        }
+      }
+
+      /////  Ann fun
+
+      var funName = function (params) {
+        document.write("<br> Hello : " + params);
+      };
+
+      console.log(funName);
+
+      funName("Ravi");
+
+      //fat Arrow fun
+      var funName = (params) => document.write("<br> Hello : " + params);
+
+      funName("Rajesh");
+    </script>
+  </body>
+</html>
